@@ -1,0 +1,441 @@
+@charset "UTF-8";
+body {
+  line-height: 1.8;
+  font-family: "Noto Serif JP", serif;
+}
+
+header, main, footer {
+  background: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.header img {
+  width: 100px;
+}
+@media screen and (min-width: 1000px) {
+  .header .gMenu, .header .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .header li {
+    margin-right: 40px;
+  }
+  .header li:last-child {
+    margin-right: 0;
+  }
+}
+
+.firstview {
+  max-width: 100%;
+  height: 700px;
+  background-image: url(../img/Rectangle4.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.firstview p {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+main h2 {
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 32px;
+  letter-spacing: 0.15em;
+}
+
+.catchcopy {
+  text-align: center;
+  padding: 100px 0;
+}
+.catchcopy h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 35px;
+  letter-spacing: 0.15em;
+}
+.catchcopy h1 span {
+  color: red;
+}
+
+section {
+  margin: 0 auto;
+  padding: 50px 0 100px;
+}
+
+#about {
+  max-width: 1040px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-bottom: 100px;
+}
+#about .textabout {
+  width: 400px;
+  margin-right: 40px;
+}
+#about .textline {
+  display: flex;
+}
+#about .textline img {
+  max-width: 100%;
+  margin-right: 24px;
+}
+#about .textline p {
+  letter-spacing: 0.15em;
+}
+
+#catch {
+  max-width: 1040px;
+  padding: 0 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#catch h2 {
+  margin: 0;
+}
+#catch .textline {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+#catch .textline img {
+  margin-right: 24px;
+}
+#catch .textline p {
+  letter-spacing: 0.15em;
+}
+#catch .photoview {
+  display: flex;
+  justify-content: space-between;
+}
+#catch .photoview img {
+  margin-right: 30px;
+}
+#catch .photoview :last-child {
+  margin-right: 0;
+}
+
+#photographer {
+  max-width: 1040px;
+  padding: 0 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+#photographer h2 {
+  font-size: 32px;
+  letter-spacing: 0.15em;
+}
+#photographer .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#photographer .textline {
+  display: flex;
+  padding-right: 40px;
+}
+#photographer .textline img {
+  margin-right: 24px;
+  max-width: 100%;
+}
+#photographer .textline p {
+  letter-spacing: 0.15em;
+}
+#photographer .textprofile {
+  width: 400px;
+}
+#photographer .myname {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 40px;
+}
+#photographer .myname span {
+  font-size: 20px;
+  padding-left: 8px;
+}
+
+#overview {
+  max-width: 1040px;
+  padding: 0 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#overview .list {
+  display: flex;
+}
+#overview .list img {
+  margin-right: 24px;
+}
+#overview .listup dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 24px;
+}
+#overview .listup dt {
+  width: 30%;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+#overview .listup dd {
+  width: 70%;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+footer .footer_inner {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .footer_left {
+  display: flex;
+  align-items: center;
+}
+footer img {
+  width: 100px;
+}
+footer nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+footer li {
+  margin-right: 40px;
+}
+footer li:last-child {
+  margin-right: 0;
+}
+footer .copyright {
+  background: #f5f5f5;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+.parallax {
+  max-width: 100%;
+  height: 400px;
+  background: url(../img/bg1.png) no-repeat center/cover;
+}
+
+.parallax2 {
+  max-width: 100%;
+  height: 400px;
+  background: url(../img/bg2.png) no-repeat center/cover;
+}
+
+@media screen and (max-width: 999px) {
+  .header__inner {
+    display: block;
+  }
+  .header__left {
+    display: block;
+    text-align: center;
+  }
+  .firstview {
+    max-width: 100%;
+    height: 400px;
+  }
+  .firstview p {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+  }
+  #about {
+    display: block;
+    padding: 0 40px;
+  }
+  #about .textabout {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #catch {
+    display: block;
+  }
+  #catch .photoview {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #catch .photoview img {
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+  #photographer .profile {
+    display: block;
+  }
+  #photographer .profile .textline {
+    margin-bottom: 40px;
+  }
+  #photographer .profile .textline .textprofile {
+    width: 100%;
+  }
+  #overview .listup dl {
+    display: block;
+  }
+  #overview .listup dt {
+    padding: 0;
+  }
+  footer .footer_inner {
+    display: block;
+  }
+  footer .footer_left {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  footer nav ul {
+    justify-content: space-between;
+  }
+  .parallax, .parallax2 {
+    height: 300px;
+  }
+  /* 以下に参考サイトのメニュー用CSSを貼り付ける */
+  /* メニューを画面上部に固定表示しています */
+  .gMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  /* メニューアイコンを画面右上に固定しています */
+  .gMenu .menu-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    padding-top: 5px;
+    height: 12px;
+  }
+  /* メニューアイコン（三本線）の真ん中の線です */
+  .gMenu .menu-icon .navicon {
+    background: #ffc107; /* 色は自由に変更可能です */
+    display: block;
+    height: 2px; /* 太さ */
+    width: 31px; /* 長さ */
+    position: relative;
+    transition: background 0.4s ease-out; /* 形が変わる時のアニメーション */
+  }
+  /* メニューアイコン（三本線）の上と下の線を疑似要素で追加 */
+  .gMenu .menu-icon .navicon::before,
+  .gMenu .menu-icon .navicon::after {
+    background: #ffc107; /* 色は自由に変更可能です */
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s ease-out; /* 形が変わる時のアニメーション */
+    width: 100%;
+  }
+  .gMenu .menu-icon .navicon::before {
+    top: 10px;
+  } /* 位置を上にずらしています */
+  .gMenu .menu-icon .navicon::after {
+    top: -10px;
+  } /* 位置を下にずらしています */
+  /* 表示されるメニューです */
+  .gMenu .menu {
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    max-height: 0; /* ★最初は高さを0にして非表示状態に */
+    transition: max-height 0.6s; /* 表示されるときのアニメーション */
+    text-align: center;
+  }
+  /* メニュー部分のデザインです */
+  .gMenu .menu li:first-of-type {
+    padding-top: 50px;
+  }
+  .gMenu .menu li a {
+    display: block;
+    padding: 24px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .gMenu .menu li a:hover {
+    background-color: #f4f4f4;
+  }
+  /* チェックボックスは常に非表示です */
+  .gMenu .menu-btn {
+    display: none;
+  }
+  /* ▼▼▼以下はチェックボックスがONの時の状態です▼▼▼ */
+  .gMenu .menu-btn:checked ~ .menu {
+    max-height: 338px; /* ★チェックボックスがオンの時高さを338pxにして表示させます */
+    transition: max-height 0.6s;
+  }
+  /* メニューボタンの中央の線を非表示に */
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  /* メニューボタンの上下の線を45度傾けて✕印を作ります */
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .gMenu .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  /* サイトに合わせてオリジナルカスタマイズ */
+  .gMenu .menu-icon {
+    top: 26px;
+  }
+  .gMenu .menu-icon .navicon,
+  .gMenu .menu-icon .navicon::before,
+  .gMenu .menu-icon .navicon::after {
+    background: #333333;
+  }
+}
+@media screen and (max-width: 529px) {
+  footer {
+    height: 400px;
+  }
+  footer nav ul {
+    display: block;
+    text-align: center;
+  }
+  footer li {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
