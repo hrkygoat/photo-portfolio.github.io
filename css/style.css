@@ -136,9 +136,10 @@ section {
   justify-content: space-between;
 }
 #catch .photoview img {
+  width: 50%;
   margin-right: 30px;
 }
-#catch .photoview :last-child {
+#catch .photoview img :last-child {
   margin-right: 0;
 }
 
@@ -158,6 +159,12 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#photographer .profile .human {
+  max-width: 390px;
+  max-height: 468px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #photographer .textline {
   display: flex;
