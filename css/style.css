@@ -294,6 +294,9 @@ footer .copyright {
     width: 100%;
     margin-bottom: 40px;
   }
+  #about .aboutphoto {
+    max-width: 100%;
+  }
   #catch {
     display: block;
   }
@@ -310,15 +313,24 @@ footer .copyright {
   }
   #photographer .profile .textline {
     margin-bottom: 40px;
+    padding-right: 0;
   }
   #photographer .profile .textline .textprofile {
     width: 100%;
   }
+  #photographer .profile .human {
+    width: 100%;
+  }
   #overview .listup dl {
     display: block;
+    width: 100%;
   }
-  #overview .listup dt {
+  #overview .listup dl dt {
     padding: 0;
+    width: 100%;
+  }
+  #overview .listup dl dd {
+    width: 100%;
   }
   footer .footer_inner {
     display: block;
