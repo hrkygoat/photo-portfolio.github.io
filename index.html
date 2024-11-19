@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>日本の写真展</title>
 </head>
 
@@ -34,16 +36,16 @@
     </header>
 
     <main>
-        <div class="firstview">
+        <div class="firstview scrollanime fadeInDown">
             <!-- <img src="img/Rectangle 4.png" alt=""> -->
             <p>Yagi`s STUDIO<br>Presents</p>
         </div>
 
-        <section class="catchcopy">
+        <section class="catchcopy scrollanime fadeInDown">
             <h1>ようこそ<br>日本の<span>美</span>を求める者よ</h1>
         </section>
 
-        <section id="about">
+        <section id="about" class="scrollanime fadeInDown">
             <div class="textabout">
                 <h2>展覧会について</h2>
                 <div class="textline">
@@ -56,10 +58,10 @@
             <img class="aboutphoto" src="img/unsplash_ryUr3SC6Lpo.png" alt="">
         </section>
 
-        <div class="parallax">
+        <div class="parallax scrollanime fadeInDown">
         </div>
         
-        <section id="catch">
+        <section id="catch" class="scrollanime fadeInDown">
             <h2>みどころ</h2>
             <div class="textline">
                 <img src="img/Line 1.png" alt="">
@@ -75,10 +77,10 @@
             </div>
         </section>
 
-        <div class="parallax2">
+        <div class="parallax2 scrollanime fadeInDown">
         </div>
 
-        <section id="photographer">
+        <section id="photographer" class="scrollanime fadeInDown">
             <h2>写真家の紹介</h2>
             <div class="profile">
                     <div class="textline">
@@ -93,7 +95,7 @@
             </div>
         </section>
 
-        <section id="overview">
+        <section id="overview" class="scrollanime fadeInDown">
             <h2>概要</h2>
                 <div class="list">
                     <img src="img/Line 1.png" alt="">
@@ -131,6 +133,38 @@
     </div>
     <p class="copyright"><small>©️copyright Hiroki's Portfolio</small></p>
     </footer>
+
+    <script>
+        $(function(){
+
+            // セレクタ.bxSlider({
+
+            // });
+
+            $('.slide').bxSlider({
+                auto:true,
+                minSlider: 3,
+                speed: 500,
+                mode: 'fade'
+            });
+        });
+    </script>
+
+    <script>
+$(function () {
+    $(window).scroll(function () {
+        const wHeight = $(window).height();
+        const scrollAmount = $(window).scrollTop();
+        $(".scrollanime").each(function () {
+            const targetPosition = $(this).offset().top;
+            if(scrollAmount > targetPosition - wHeight + 60) {
+                $(this).addClass("fadeInDown");
+            }
+        });
+    });
+});
+    </script>
+
 </body>
 
 </html>
